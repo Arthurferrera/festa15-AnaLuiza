@@ -740,11 +740,10 @@ section.template1_tips .container {
   width: 1030px;
 }
 section.template1_tips .titulo-dicas {
-  padding: 0px !important;
+  padding: 0 !important;
   font-family: "courier new" !important;
   font-size: 3.5rem;
   color: #ffffff;
-  border: 0px none #f700ff !important;
   line-height: 3.7rem;
   text-align: center;
 }
@@ -838,8 +837,7 @@ section.template1_photos .titulo-album {
   text-align: center;
   line-height: 3.7rem;
   position: relative;
-  border: 0px none #f700ff;
-  padding: 0px;
+  padding: 0 0 24px 0 !important;
   font-family: "courier new";
 }
 section.template1_photos .icon1 {
@@ -967,19 +965,18 @@ section.template1_contact {
   text-align: center;
 }
 section.template1_contact .titulo-data-local {
-  padding: 0;
+  padding: 0 0 16px 0;
   font-family: "courier new" !important;
   font-size: 3.5rem;
   color: #ffffff;
   line-height: 3.7rem;
   text-align: center;
-  text-shadow: 0px 0px 5px #FFFFFF !important;
 }
 section.template1_contact ul {
   display: inline-block;
   width: auto;
   max-width: 100%;
-  margin: 30px 0 0 0;
+  margin: 30px 0 30px 0;
 }
 section.template1_contact ul li {
   float: left;
@@ -991,6 +988,31 @@ section.template1_contact ul .img_item {
   float: left;
   margin: 0;
   max-width: 100%;
+}
+
+.lista-dados-local {
+  color: #ffffff;
+  text-align: start;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+@media (min-width: 992px) {
+  .lista-dados-local {
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+    line-height: 24px;
+  }
+
+  .lista-dados-local > ul {
+    width: 100% !important;
+    margin-bottom: 10px;
+  }
 }
 
 @media (max-width: 500px) {

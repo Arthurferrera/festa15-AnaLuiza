@@ -1757,12 +1757,23 @@
 
     <div>
       <style>
+        .template1_banner {
+          height: 100%;
+        }
+
+        .template1_banner>.item {
+          height: 100% !important;
+          display: flex;
+          justify-self: center;
+          align-items: center;
+        }
+
         .texto-do-banner {
+          margin: 0 !important;
           color: #FFFFFF !important;
           border: 0px none #FFFFFF !important;
           padding: 0px !important;
           font-family: 'courier new' !important;
-          text-shadow: 0px 0px 10px #FFFFFF !important
         }
 
         .data-da-festa {
@@ -1770,7 +1781,6 @@
           border: 0px none #FFFFFF !important;
           padding: 0px !important;
           font-family: 'courier new' !important;
-          text-shadow: 0px 0px 10px #FFFFFF !important
         }
       </style>
     </div>
@@ -1818,22 +1828,18 @@
         }
       </style>
       <section class="col-xs-12 template1_about tem_con_img_bg abouttem_con_color_bg" id="about">
-        <div class="top tem_con_img_bg_topo"></div>
-
         <div class="container">
-          <div class="col-xs-12 title abouttem_con_texto_um_config abouttem_con_texto_um_conteudo">
+          <div class="col-xs-12 title abouttem_con_texto_um_config abouttem_con_texto_um_conteudo titulo-dicas">
             Sejam Bem Vindos! <br>
             Aqui começa mais um ciclo da minha vida...
           </div>
 
-          <div class="col-xs-12 text abouttem_con_texto_dois_config abouttem_con_abo_texto_dois">
-            <div class="box">
-              O valor das coisas não está no tempo que elas acontecem, por isso existem momentos inesquecíveis, coisas
-              inexplicáveis,
-              e pessoas incomparáveis.
-              <br><br>
-              Para viver as emoções deste dia tão importante, quero estar ao lado de pessoas especiais, como você!
-            </div>
+          <div class="col-xs-12 text abouttem_con_texto_dois_config abouttem_con_abo_texto_dois texto-contador">
+            O valor das coisas não está no tempo que elas acontecem, por isso existem momentos inesquecíveis, coisas
+            inexplicáveis,
+            e pessoas incomparáveis.
+            <br><br>
+            Para viver as emoções deste dia tão importante, quero estar ao lado de pessoas especiais, como você!
           </div>
 
           <div class="col-xs-12 icon2 tem_con_img_divisor_dois"></div>
@@ -1843,14 +1849,6 @@
             faltam apenas ....
           </div>
           <!--box_time-->
-
-          <div class="tem_con_img_divisor_contadorregressivo_url" style="display: none">
-            <style>
-              .template1_about .box_time .item:before {
-                background-image: url('') !important;
-              }
-            </style>
-          </div>
 
           <div class="col-xs-12 box_time">
             <div class="box" id="timer">
@@ -1887,7 +1885,8 @@
 
           <div
             class="col-xs-12 text_date2 abouttem_con_texto_contadorregressivo_subtitulo_config abouttem_con_texto_contadorregressivo_subtitulo_conteudo">
-            até o dia da festa ... </div>
+            até o dia da festa ...
+          </div>
         </div>
 
         <div class="bottom tem_con_img_bg_rodape"
@@ -1898,64 +1897,37 @@
 
     <div id="StyleCss_editorCssabouttem_con_texto_um_config">
       <style>
+        section.template1_about {
+          padding: 60px 0 80px 0;
+        }
+
         .abouttem_con_texto_um_config {
+          font-size: 3.5rem !important;
+          line-height: 3.7rem !important;
           color: #FFFFFF !important;
-          border: 0px none #F700FF !important;
           padding: 0px !important;
           font-family: 'courier new' !important;
-          text-shadow: 0px 0px 10px #F700FF !important
         }
-      </style>
-    </div>
-    <div id="StyleCss_editorCssabouttem_con_texto_nome_esquerda_config">
-      <style>
-        .abouttem_con_texto_nome_esquerda_config {
-          color: #FFFFFF !important;
-          border: 0px none #F700FF !important;
-          padding: 0px !important;
-          font-family: Lobster !important
-        }
-      </style>
-    </div>
-    <div id="StyleCss_editorCssabouttem_con_texto_nome_direita_config">
-      <style>
-        .abouttem_con_texto_nome_direita_config {
-          color: #FFFFFF !important;
-          border: 0px none #F700FF !important;
-          padding: 0px !important;
-          font-family: Lobster !important
-        }
-      </style>
-    </div>
-    <div id="StyleCss_editorCssabouttem_con_texto_dois_config">
-      <style>
+
         .abouttem_con_texto_dois_config {
-
           color: #FFFFFF !important;
-          border: 0px none #F700FF !important;
           padding: 0px !important;
           font-family: 'courier new' !important;
-          top: 50px !important
+          top: 50px !important;
+          margin: 0;
+          font-size: 20px !important;
+          line-height: 24px !important;
+          text-align: center !important;
         }
-      </style>
-    </div>
-    <div id="StyleCss_editorCssabouttem_con_texto_contadorregressivo_titulo_config">
-      <style>
-        .abouttem_con_texto_contadorregressivo_titulo_config {
 
+        .abouttem_con_texto_contadorregressivo_titulo_config {
           color: #FFFFFF !important;
-          border: 0px none #F700FF !important;
           padding: 0px !important;
           bottom: 51px !important
         }
-      </style>
-    </div>
-    <div id="StyleCss_editorCssabouttem_con_texto_contadorregressivo_time_config">
-      <style>
-        .abouttem_con_texto_contadorregressivo_time_config {
 
+        .abouttem_con_texto_contadorregressivo_time_config {
           color: #FFFFFF !important;
-          border: 0px none #F700FF !important;
           padding: 0px !important
         }
       </style>
@@ -1963,9 +1935,7 @@
     <div id="StyleCss_editorCssabouttem_con_texto_contadorregressivo_timeescrita_config">
       <style>
         .abouttem_con_texto_contadorregressivo_timeescrita_config {
-
           color: #FFFFFF !important;
-          border: 0px none #F700FF !important;
           padding: 0px !important
         }
       </style>
@@ -2215,11 +2185,11 @@
     <!-- ALBUM -->
     <!-- SECAO FOTOS -->
     <div class="col-xs-12" id="contentModulo_tips" style="width: 100%; padding: 0">
-      <section class="col-xs-12 template1_tips tem_con_img_bg tipstem_con_color_bg" id="tips">
+      <section class="col-xs-12 template1_photos tem_con_img_bg tipstem_con_color_bg" id="tips">
         <!--container-->
         <div class="container">
-          <div class="col-xs-12 title titulo-dicas">
-            FOTOS
+          <div class="col-xs-12 title titulo-album">
+            FOTOS DA PRINCESA
           </div>
         </div>
 
@@ -2253,53 +2223,53 @@
             align-items: center;
           }
         </style>
-                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                  <!-- Indicators -->
-                  <ol class="carousel-indicators">
-                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-                    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-                    <li data-target="#carousel-example-generic" data-slide-to="5"></li>
-                    <li data-target="#carousel-example-generic" data-slide-to="6"></li>
-                  </ol>
-                
-                  <!-- Wrapper for slides -->
-                  <div class="carousel-inner" role="listbox">
-                    <div class="item foto-item active">
-                      <img class="foto" src="assets/images/67b86afb-0e8a-48b0-8607-8e6479b89f68.JPG" alt="...">
-                    </div>
-                    <div class="item foto-item">
-                      <img class="foto" src="assets/images/IMG_8900.jpg" alt="...">
-                    </div>
-                    <div class="item foto-item">
-                      <img class="foto" src="assets/images/ballet.jpg" alt="...">
-                    </div>
-                    <div class="item foto-item">
-                      <img class="foto" src="assets/images/BF6CF610-3214-450B-9F0F-7A1831840919.JPG" alt="...">
-                    </div>
-                    <div class="item foto-item">
-                      <img class="foto" src="assets/images/bocasuja.jpg" alt="...">
-                    </div>
-                    <div class="item foto-item">
-                      <img class="foto" src="assets/images/effa7e92-949a-4843-b5a0-48e21eb6a825.JPG" alt="...">
-                    </div>
-                    <div class="item foto-item">
-                      <img class="foto" src="assets/images/numsei.jpg" alt="...">
-                    </div>
-                  </div>
-                
-                  <!-- Controls -->
-                  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                    <img src="assets/images/img_photos2_prev.png" alt="">
-                    <span class="sr-only">Previous</span>
-                  </a>
-                  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                    <img src="assets/images/img_photos2_next.png" alt="">
-                    <span class="sr-only">Next</span>
-                  </a>
-                </div>
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item foto-item active">
+              <img class="foto" src="assets/images/67b86afb-0e8a-48b0-8607-8e6479b89f68.JPG" alt="...">
+            </div>
+            <div class="item foto-item">
+              <img class="foto" src="assets/images/IMG_8900.jpg" alt="...">
+            </div>
+            <div class="item foto-item">
+              <img class="foto" src="assets/images/ballet.jpg" alt="...">
+            </div>
+            <div class="item foto-item">
+              <img class="foto" src="assets/images/BF6CF610-3214-450B-9F0F-7A1831840919.JPG" alt="...">
+            </div>
+            <div class="item foto-item">
+              <img class="foto" src="assets/images/bocasuja.jpg" alt="...">
+            </div>
+            <div class="item foto-item">
+              <img class="foto" src="assets/images/effa7e92-949a-4843-b5a0-48e21eb6a825.JPG" alt="...">
+            </div>
+            <div class="item foto-item">
+              <img class="foto" src="assets/images/numsei.jpg" alt="...">
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <img src="assets/images/img_photos2_prev.png" alt="">
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <img src="assets/images/img_photos2_next.png" alt="">
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
 
         <!--container-->
         <div class="bottom tem_con_img_bg_rodape"
@@ -2319,16 +2289,33 @@
             DATA E LOCAL
           </div>
 
-
-
-          <div class="col-lg-6 col-xs-12 col-md-6">
-            <ul>
-              <li>
-                Nome do local: Buffet Uriel
+          <div class="col-lg-6 col-xs-12 col-md-6 div-dados-local">
+            <ul class="lista-dados-local">
+              <li class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <b>
+                  Nome do local:
+                </b> Buffet Uriel
               </li>
-              <li>Horário de ínicio: 19:00</li>
-              <li>Endereço: Rua panana</li>
-              <li>Ponto de referência</li>
+              <li class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <b>
+                  Horário de ínicio:
+                </b>
+                19:00
+              </li>
+              <li class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <b>
+                  Endereço:
+                </b>
+                Estr. dos Pinheiros, 70 - Jardim Paulista,
+                Barueri - SP, 06449-000
+              </li>
+              <li class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <b>
+                  Ponto de referência:
+                </b>
+                Em Frente a quadra Parque
+                Viana/Votupoca e próximo ao Posto Petrobras
+              </li>
             </ul>
           </div>
 
@@ -2339,7 +2326,6 @@
               referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
-
       </section>
     </div>
 
