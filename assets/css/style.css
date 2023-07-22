@@ -1000,12 +1000,11 @@ section.template1_contact ul .img_item {
 @media (min-width: 992px) {
   .lista-dados-local {
     min-height: 450px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: stretch;
-    align-content: stretch;
+    display: flex !important;
+    flex-direction: column !important;
+    flex-wrap: nowrap !important;
+    justify-content: center !important;
+    align-items: stretch !important;
     line-height: 24px;
   }
 
