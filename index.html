@@ -1702,12 +1702,6 @@
     }
   </style>
 
-  <!-- Owl Carousel Assets -->
-  <link href="assets/js/owlcarousel/owl.carousel.css" rel="stylesheet">
-  <link href="assets/js/owlcarousel/owl.theme.css" rel="stylesheet">
-  <script src="assets/js/owlcarousel/owl.carousel.js"></script>
-  <!-- Owl Carousel Assets -->
-
   <!--fancybox2-->
   <script type="text/javascript" src="assets/js/fancybox2/jquery.fancybox.js?v=2.1.5"></script>
   <link rel="stylesheet" type="text/css" href="assets/js/fancybox2/jquery.fancybox.css?v=2.1.5" media="screen">
@@ -1804,18 +1798,6 @@
           $('#timer #minutes').html(event.strftime('%M'));
           $('#timer #seconds').html(event.strftime('%S'));
         });
-
-        $('.slide_about').owlCarousel({
-          navigation: false,
-          autoPlay: 5000,
-          items: 1,
-          itemsDesktop: [1190, 1],
-          itemsDesktopSmall: [1100, 1],
-          itemsTablet: [900, 1],
-          itemsTabletSmall: [700, 1],
-          itemsMobile: [590, 1]
-        });
-
       });   
     </script>
     <script src="https://meusite-assets.invip.com.br/about/assets/js/jquery.countdown.min.js"></script>
@@ -2184,6 +2166,8 @@
 
     <!-- ALBUM -->
     <!-- SECAO FOTOS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <div class="col-xs-12" id="contentModulo_tips" style="width: 100%; padding: 0">
       <section class="col-xs-12 template1_photos tem_con_img_bg tipstem_con_color_bg" id="tips">
         <!--container-->
@@ -2193,82 +2177,19 @@
           </div>
         </div>
 
-        <style>
-          .box-fotos {
-            height: 450px;
-          }
-
-          .slide {
-            height: 450px;
-          }
-
-          .carousel-inner {
-            height: 450px;
-          }
-
-          .foto-item {
-            height: 450px;
-            display: flex !important;
-            justify-content: center !important;
-          }
-
-          .foto-item>.foto {
-            height: 450px !important;
-            object-fit: contain;
-          }
-
-          .carousel-control {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-          }
-        </style>
-        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="5"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="6"></li>
-          </ol>
-
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner" role="listbox">
-            <div class="item foto-item active">
-              <img class="foto" src="assets/images/67b86afb-0e8a-48b0-8607-8e6479b89f68.JPG" alt="...">
-            </div>
-            <div class="item foto-item">
-              <img class="foto" src="assets/images/IMG_8900.jpg" alt="...">
-            </div>
-            <div class="item foto-item">
-              <img class="foto" src="assets/images/ballet.jpg" alt="...">
-            </div>
-            <div class="item foto-item">
-              <img class="foto" src="assets/images/BF6CF610-3214-450B-9F0F-7A1831840919.JPG" alt="...">
-            </div>
-            <div class="item foto-item">
-              <img class="foto" src="assets/images/bocasuja.jpg" alt="...">
-            </div>
-            <div class="item foto-item">
-              <img class="foto" src="assets/images/effa7e92-949a-4843-b5a0-48e21eb6a825.JPG" alt="...">
-            </div>
-            <div class="item foto-item">
-              <img class="foto" src="assets/images/numsei.jpg" alt="...">
-            </div>
+        <div class="swiper sample-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="assets/images/foto1.JPG"></div>
+            <div class="swiper-slide"><img src="assets/images/foto2.jpg"></div>
+            <div class="swiper-slide"><img src="assets/images/ballet.jpg"></div>
+            <div class="swiper-slide"><img src="assets/images/foto4.JPG"></div>
+            <div class="swiper-slide"><img src="assets/images/foto5.jpg"></div>
+            <div class="swiper-slide"><img src="assets/images/foto6.JPG"></div>
+            <div class="swiper-slide"><img src="assets/images/foto7.jpg"></div>
           </div>
-
-          <!-- Controls -->
-          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-            <img src="assets/images/img_photos2_prev.png" alt="">
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-            <img src="assets/images/img_photos2_next.png" alt="">
-            <span class="sr-only">Next</span>
-          </a>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
 
         <!--container-->
@@ -2276,10 +2197,64 @@
           style="background-image:url('https://www.invip.com.br/template_edicao/imgtemplate_configuracao/58/banner/n/2e72ef876ecb79b7b418398f16b614e8.png') !important; ">
         </div>
       </section>
+
+      <style>
+        .sample-slider {
+          width: 90%;
+          height: 450px;
+        }
+
+        .sample-slider img {
+          width: 100%;
+          height: 450px;
+          object-fit: cover;
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next::after {
+          color: #FFFFFF;
+        }
+
+        .swiper-pagination-bullet-active {
+          background: #FFFFFF;
+        }
+
+        .swiper-button-prev {
+          left: -10px;
+        }
+
+        .swiper-button-next {
+          right: -10px;
+        }
+      </style>
+
+      <script>
+        const swiper = new Swiper('.sample-slider', {
+          loop: true,                         //loop
+          effect: "cube",                     //make slider cube
+          cubeEffect: {
+            slideShadows: true,             // Presence of shadows on the slide surface
+            shadow: true,                   // Presence of shadows below the slide
+            shadowOffset: 100,              // Position of shadows below the slide (in pixels)
+            shadowScale: 1,                 // Size Ratio of shadows below the slide (0~1)
+          },
+          grabCursor: true,                   //grab cursor
+          speed: 1500,                        //slide speed
+          autoplay: {                         //auto play
+            delay: 2000,
+          },
+          pagination: {                       //pagination(dots)
+            el: '.swiper-pagination',
+          },
+          navigation: {                       //navigation(arrows)
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        })
+      </script>
     </div>
 
     <!-- CONTEUDO DE INFORMACOES DA DATA E LOCAL DA FESTA -->
-    <!-- <link href="https://meusite-assets.invip.com.br/contact/assets/css/style.css" rel="stylesheet"> -->
     <div class="col-xs-12" id="contentModulo_contact" style="width: 100%; padding: 0">
       <section class="col-xs-12 template1_contact tem_con_img_bg contacttem_con_color_bg" id="contact">
 
@@ -2335,16 +2310,6 @@
   <script>funGlobal_frmAjaxPostJson('FrmRecado1283774372', '');</script>
 
   <div id="box_playlist_control" data-playerstatus="off" style="display: none"></div>
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3PVD3R6377"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-3PVD3R6377');
-  </script>
 </body>
 
 </html>
